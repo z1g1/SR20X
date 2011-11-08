@@ -82,6 +82,9 @@ h2 {
     text-shadow: rgba (0,0,0,0.6) 0px -1px 1px;
     line-height: 28px;
     border-width: 0 8px 0 8px;
+   border-style: solid;
+   border-color: #000000;
+   border-width: 1px;
 }
 .MissionTable {
 	border-style: solid;
@@ -115,14 +118,13 @@ h2 {
 	height: 50px;
 	font-weight: bold;
 	font-size: 1.2em;
-{
+}
 
-/* 
-
-Add back to #header div.leftButton -webkit-border-image: url(images/button.png) 0 8 0 8;
+/*Add back to #header div.leftButton -webkit-border-image: url(images/button.png) 0 8 0 8;*/
 
 #header div.pressed {
    -webkit-border-image: url(images/button_clicked.png) 0 8 0 8;
+   border-style: solid;
+   border-color: #000000;
+   border-width: 3px;
 }
-
-*/

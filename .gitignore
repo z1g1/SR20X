@@ -1,0 +1,11 @@
+
+# Ignore Itself	
+.gitignore 
+
+# To Large for Githum
+images/
+
+
+
+# Old Version before Version Contorl
+old/
