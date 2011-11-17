@@ -13,7 +13,7 @@
 		<link rel="icon" href="./favicon.ico" type="image/x-icon"><!--Favicon Compatiblity-->
 		<link rel="apple-touch-icon" href="./custom_icon.png"/><!--Home Screen Icon-->
     </head>
-    <body  onLoad="GenerateMission()">
+    <body  onLoad="generateMission()">
         <div id="container">
             <div id="header">
                 <h1><a href="index.html">SR20X</a></h1><!-- Site Title -->
@@ -24,11 +24,18 @@
 						<li><a href="reference.html">SR Reference</a></li>
                         <li><a href="http://privateerpress.com/">Privateer Press</a></li>
                     </ul>
+					<ul>
+						Check the Mission Types you wish to generate
+						<li><input type="checkbox" id="missionTypeCenter" checked="checked" />Center Scenario<br /></li>
+						<li><input type="checkbox" id="missionTypeDual" checked="checked" value="dual" />Dual Scenario<br /></li>
+						<li><input type="checkbox" id="missionTypeDistant" checked="checked" value="distant" />Distant Scenario<br /></li>
+						<li><input type="checkbox" id="missionTypeRadial" checked="checked" value="radial" />Radial Scenario<br /></li>
+					</ul>
                 </div>
             </div>
             <div id="content">
                 <h2>Generate a Mission</h2> <!-- Page Title -->
-				<button id="GenerateAnotherMission" onClick="GenerateMission()" class="wideButton">Generate Another!!</button>
+				<button id="GenerateAnotherMission" onClick="generateMission()" class="wideButton">Generate Another!!</button>
 				<!-- Mission Table -->
 				<table class="MissionTable" id="MissionTable">
 					<!-- Mission Number -->
@@ -38,12 +45,6 @@
 					<tr id="MissionTypeBox">
 						<td>************</td>
 					</tr>					
-					<tr class="RowHeading">
-						<td>missionNumber</td>
-					</tr>
-					<tr id="MissionNumber">
-						<td>************</td>
-					</tr>
 					<!-- Mission Name -->
 					<tr class="RowHeading">
 						<td>Mission Name</td>
