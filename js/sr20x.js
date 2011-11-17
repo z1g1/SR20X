@@ -108,6 +108,56 @@ function GenerateMission() {
 	GenerateMission();
 	
 	}	
+}
+function displayMission () { //used by missions.html to load a mission which is chosen by the end user
+		//XML shenanagins 
+		//creates a new http request
+		xmlhttp=new XMLHttpRequest();
+		
+		//selects the missions xml file from the xml directory
+		xmlhttp.open("GET","xml/sr2011-missions.xml",false);
+		
+		//send the http resoppnse
+		xmlhttp.send();
+		
+		//set the retrived xml document to the variable xmlDOC
+		xmlDoc=xmlhttp.responseXML;
+
+	//Set the mission Number	
+	var SetMissionNumber = document.getElementById("HTMLmissionPicker").selectedIndex;
+	
+	//replaced tag "CD" with tag "mission" from the sample XML application at http://www.w3schools.com/xml/xml_applications.asp
+	x=xmlDoc.getElementsByTagName("mission");
+
+	//loads the mission Type from the xml file into the VARmissionType Variable
+	VARmissionType = x[SetMissionNumber].getElementsByTagName("type")[0].childNodes[0].nodeValue;
+
+	//Write out the mission Type
+	document.getElementById("MissionType").innerHTML=(VARmissionType);
+	
+	//loads the mission Type from the xml file into the VARmissionName Variable
+	VARmissionName = x[SetMissionNumber].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+	//Write out the mission Name
+	document.getElementById("MissionTableName").innerHTML=(VARmissionName);
+	
+	//loads the mission Type from the xml file into the VARmissionRules Variable
+	VARmissionRules = x[SetMissionNumber].getElementsByTagName("specialRules")[0].childNodes[0].nodeValue;
+
+	//Write out the mission Special Rules
+	document.getElementById("MissionTableRules").innerHTML=(VARmissionRules);
+	
+	//loads the mission Type from the xml file into the VARmissionVictory Variable
+	VARmissionVictory = x[SetMissionNumber].getElementsByTagName("victoryConditions")[0].childNodes[0].nodeValue;
+
+	//Write out the mission Victory Conditions
+	document.getElementById("MissionTableVictory").innerHTML=(VARmissionVictory);
+	
+	//loads the mission map path from the xml file into the VARmissionMap Variable
+	VARmissionMap = x[SetMissionNumber].getElementsByTagName("map")[0].childNodes[0].nodeValue;
+
+	//Write out the mission Victory Conditions
+	document.getElementById("MissionTableMap").innerHTML=("<a target=\"_blank\" href=\" "+VARmissionMap+"\"><img src=\""+VARmissionMap+"\" width=\"100%\" alt\" Mission map for "+VARmissionName+"/></a>");
 	
 	
 }

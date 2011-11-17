@@ -1,11 +1,5 @@
-
 # Ignore Itself	
 .gitignore 
 
-# To Large for Githum
+# To Large for Github
 images/
-
-
-
-# Old Version before Version Contorl
-old/
