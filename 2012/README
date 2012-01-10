@@ -1,0 +1,25 @@
+# SR20X Mission Generator
+
+## Introduction
+
+This web app was designed as an experiment in mobile web development and as an ode to Warmachine and Hordes
+
+Anything related to Warmachine and Hordes is owned by Privateer Press, you need thier awesome minis to play the game
+
+The code of this site is liscensed under the MIT Liscense, see the /legal.html page for additional information 
+
+
+## Github
+
+This web app was a learning experince for me so why shouldn't it be for you.  I have all of the files except for the images/ directory stored on Github https://github.com/z1g1/SR20X
+
+## Acknowledgements 
+
+* These books helped me as I was writting the application.  Thanks to: 
+	* David Flanagan for writting JavaScript: The Definitive Guide: The Definitive Guide (Definitive Guides) http://www.amazon.com/gp/product/B004XQX4K0/ref=kinw_myk_ro_title
+	* Jonathan Stark for writting Building Android Apps with HTML, CSS, and JavaScript [Kindle Edition] http://www.amazon.com/gp/product/B0046RERZ2/ref=kinw_myk_ro_title
+* Thanks to http://www.w3schools.com/ for your searchable site
+
+## Contact Information
+
+http://z1g1.net/about
