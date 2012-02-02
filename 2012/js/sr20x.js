@@ -1,17 +1,8 @@
 
 var MissionNumber = Math.floor(Math.random()*16);
 
-function PrintRandomNumber() {
-	//Prints a number to the whole document
-	//document.write(Math.floor(Math.random()*11));
-
-	//Prints the number out to specified row 
-	document.getElementById("MissionTableName").innerHTML=MissionNumber;
-
-}
-
 function generateMission(){
-						//XML Loads 
+						//XML Loading
 							//creates a new http request
 							xmlhttp=new XMLHttpRequest();
 							
@@ -25,9 +16,9 @@ function generateMission(){
 							xmlDoc=xmlhttp.responseXML;
 		
 						//Generate a Random Mission Number
-						var MissionNumber = Math.floor(Math.random()*18);  //Counting the number of missions listed in the XML document in the future would be better
+						var MissionNumber = Math.floor(Math.random()*18);
 						
-						//replaced tag "CD" with tag "mission" from the sample XML application at http://www.w3schools.com/xml/xml_applications.asp
+						//set the variable x as the tag which will be searched for in the xmlDoc
 						x=xmlDoc.getElementsByTagName("mission");
 		
 						//load all mission information into variables
@@ -42,6 +33,45 @@ function generateMission(){
 							generateMission();
 							return;
 						}
+						
+						//Define a variable to count the number of mission type check boxes to ensure that at least 1 is checked.  
+						//Without this check an endless loop can be created and crash browsers.
+						//It is reset to 0 every time the generateMission() function is called
+						var missionTypeCheckBoxCounter = 0;
+						
+						//Adds 1 to the missionTypeCheckBoxCounter for each check box which is checked
+						if (document.getElementById("missionTypeCenter").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						if (document.getElementById("missionTypeDual").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						if (document.getElementById("missionTypeDistant").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						if (document.getElementById("missionTypeRadial").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						if (document.getElementById("missionTypeFlank").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						if (document.getElementById("missionTypeObjective").checked==true) {
+						missionTypeCheckBoxCounter = ++missionTypeCheckBoxCounter;
+						}
+						
+						//Checks to see if missionTypeCheckBoxCounter is lessthan1 to make sure at least one box is checked.  If it does it cancels a fuction
+						if (missionTypeCheckBoxCounter < 1) {
+							//let the user know that they must have a box checekd
+							alert("At least one mission type must be selected");
+							//reset all of the checkboxes
+							document.getElementById("missionTypeCenter").checked = true;
+							document.getElementById("missionTypeDual").checked = true;
+							document.getElementById("missionTypeDistant").checked = true;
+							document.getElementById("missionTypeRadial").checked = true;
+							document.getElementById("missionTypeFlank").checked = true;
+							document.getElementById("missionTypeObjective").checked = true;
+						}			
+						
 						
 						//Checks to see if the mission type checkboxes are engaged
 						if (document.getElementById("missionTypeCenter").checked==false && missionType == "Center Scenario") {
