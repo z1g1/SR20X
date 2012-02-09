@@ -8,6 +8,14 @@ Anything related to Warmachine and Hordes is owned by Privateer Press, you need 
 
 The code of this site is liscensed under the MIT Liscense, see the /legal.html page for additional information 
 
+## Features 
+
+This webapp contains all of the information that a player would need to generate a mission for Privateer Press's Warmachine & Hordes game using the latest version of the Steamroller Mission.  The app contains the following features.
+* Mission Generation
+* Mission References
+* SR Variant Information
+* SR References 
+* Offline Access
 
 ## Github
 
