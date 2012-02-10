@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v 0.5 2/9/2012
+# v 0.6 2/9/2012
 
 # CSS
 css/android.css
@@ -40,4 +40,5 @@ js/jquery.js
 js/sr20x.js
 
 # XML
+xml/sr2011-missions.xml
 xml/sr2012-missions.xml
