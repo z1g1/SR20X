@@ -1,5 +1,4 @@
 # Ignore Itself	
 .gitignore 
-
-# To Large for Github
-images/
+# Apache files
+.htaccess
