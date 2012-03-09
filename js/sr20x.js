@@ -106,6 +106,7 @@ function generateMission(){
 						document.getElementById("MissionTableVictory").innerHTML=(missionVictory);
 						document.getElementById("MissionTableMap").innerHTML=("<a href=\""+missionMap+"\" target=\"_blank\"><img src=\""+missionMap+"\" alt=\"Map for "+missionName+"\" width=\"100%\"/></a>");	
 			}
+
 function displayMission () { //used by missions.html to load a mission which is chosen by the end user
 		//XML shenanagins 
 		//creates a new http request
@@ -156,5 +157,55 @@ function displayMission () { //used by missions.html to load a mission which is 
 	//Write out the mission Victory Conditions
 	document.getElementById("MissionTableMap").innerHTML=("<a target=\"_blank\" href=\" "+VARmissionMap+"\"><img src=\""+VARmissionMap+"\" width=\"100%\" alt\" Mission map for "+VARmissionName+"/></a>");
 	
+	
+}
+function printInformation() { //used by information.html to print out the information from the xml file
+	//XML shenanagins 
+		//creates a new http request
+		xmlhttp=new XMLHttpRequest();
+
+		//selects the missions xml file from the xml directory
+		xmlhttp.open("GET","xml/sr2012-information.xml",false);
+
+		//send the http resoppnse
+		xmlhttp.send();
+
+		//set the retrived xml document to the variable xmlDOC
+		xmlDoc=xmlhttp.responseXML;	
+	
+	//replaced tag "CD" with tag "page" from the sample XML application at http://www.w3schools.com/xml/xml_applications.asp
+	x=xmlDoc.getElementsByTagName("page");
+
+	//I think redundant
+			//setup i as the counter for the for loop
+			//i=0;
+
+	//define a variable to hold the count of the number of nodes for <page> inside the selected XML document	
+	countXmlNodes = 0;
+   
+   //a loop to increment a counter by one for each instance of the node <page> inside the Selected XML Document
+   for ( var i = 0; i < x.length ; i++ )
+      {
+          countXmlNodes++;
+      }
+	
+	//Loop to print out each of the information pages as a table of contents from selected $year's xml file
+	for (i=0;i<=countXmlNodes;i++)
+		{
+		//Loads the <title> into VARsectionTitle
+		VARsectionTitle = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+		//Loads the <anchor> into VARsectionAnchor to act as an anchor list in the Table of Contents
+		VARsectionAnchor = x[i].getElementsByTagName("anchor")[0].childNodes[0].nodeValue;
+
+		//Loads the <anchor> into VARsectionAnchor to act as an anchor list in the Table of Contents
+		VARsectionContent = x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue;
+		
+		//Write out the titles into a list of anchor links by appending the existing value of document.getElementById("TableOfContents").innerHTML 
+		document.getElementById("TableOfContents").innerHTML=(document.getElementById("TableOfContents").innerHTML+"<li><a href=\"#"+VARsectionAnchor+"\">"+VARsectionTitle+"</a></li>");
+		
+		//Write the Titles with Anchor links and the content from the selected year's XML file
+		document.getElementById("srInformation").innerHTML=(document.getElementById("srInformation").innerHTML+"<h2><a name=\""+VARsectionAnchor+"\">"+VARsectionTitle+"</h2></a>"+VARsectionContent);
+		}
 	
 }

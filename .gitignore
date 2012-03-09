@@ -2,3 +2,5 @@
 .gitignore 
 # Apache files
 .htaccess
+#Ignore .swp file
+.swp
