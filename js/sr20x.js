@@ -1,5 +1,9 @@
-
+//set an initial random number
 var MissionNumber = Math.floor(Math.random()*16);
+
+//set the default value to load from the 
+var MissionYear = 2012;
+
 
 function generateMission(){
 						//XML Loading
@@ -7,7 +11,7 @@ function generateMission(){
 							xmlhttp=new XMLHttpRequest();
 							
 							//selects the missions xml file from the xml directory
-							xmlhttp.open("GET","xml/sr2012-missions.xml",false);
+							xmlhttp.open("GET","xml/sr"+MissionYear+"-missions.xml",false);
 							
 							//send the http resoppnse
 							xmlhttp.send();
@@ -113,7 +117,7 @@ function displayMission () { //used by missions.html to load a mission which is 
 		xmlhttp=new XMLHttpRequest();
 		
 		//selects the missions xml file from the xml directory
-		xmlhttp.open("GET","xml/sr2012-missions.xml",false);
+		xmlhttp.open("GET","xml/sr"+MissionYear+"-missions.xml",false);
 		
 		//send the http resoppnse
 		xmlhttp.send();
@@ -165,7 +169,7 @@ function printInformation() { //used by information.html to print out the inform
 		xmlhttp=new XMLHttpRequest();
 
 		//selects the missions xml file from the xml directory
-		xmlhttp.open("GET","xml/sr2012-information.xml",false);
+		xmlhttp.open("GET","xml/sr"+MissionYear+"-information.xml",false);
 
 		//send the http resoppnse
 		xmlhttp.send();
@@ -176,13 +180,14 @@ function printInformation() { //used by information.html to print out the inform
 	//replaced tag "CD" with tag "page" from the sample XML application at http://www.w3schools.com/xml/xml_applications.asp
 	x=xmlDoc.getElementsByTagName("page");
 
-	//I think redundant
-			//setup i as the counter for the for loop
-			//i=0;
-
 	//define a variable to hold the count of the number of nodes for <page> inside the selected XML document	
 	countXmlNodes = 0;
-   
+
+	//Define local variables 
+	 var VARsectionTitle; 
+	 var VARsectionAnchor; 
+	 var VARsectionContent;
+
    //a loop to increment a counter by one for each instance of the node <page> inside the Selected XML Document
    for ( var i = 0; i < x.length ; i++ )
       {
@@ -208,4 +213,48 @@ function printInformation() { //used by information.html to print out the inform
 		document.getElementById("srInformation").innerHTML=(document.getElementById("srInformation").innerHTML+"<h2><a name=\""+VARsectionAnchor+"\">"+VARsectionTitle+"</h2></a>"+VARsectionContent);
 		}
 	
+}
+function printNavigation() { 
+	//XML shenanagins 
+		//creates a new http request
+		xmlhttp=new XMLHttpRequest();
+
+		//selects the missions xml file from the xml directory
+		xmlhttp.open("GET","xml/sr"+MissionYear+"-navigation.xml",false);
+
+		//send the http resoppnse
+		xmlhttp.send();
+
+		//set the retrived xml document to the variable xmlDOC
+		xmlDoc=xmlhttp.responseXML;	
+	
+	//replaced tag "CD" with tag "page" from the sample XML application at http://www.w3schools.com/xml/xml_applications.asp
+	x=xmlDoc.getElementsByTagName("page");
+
+	//define a variable to hold the count of the number of nodes for <page> inside the selected XML document	
+	countXmlNodes = 0;
+  
+       //define variables
+       var VARpageTitle;
+
+       var VARpageLink;
+
+	//a loop to increment a counter by one for each instance of the node <page> inside the Selected XML Document
+	for ( var i = 0; i < x.length ; i++ )
+		{
+		countXmlNodes++;
+		}
+	
+	//Loop to print out each of the information pages as a table of contents from selected $year's xml file
+	for (i=0;i<=countXmlNodes;i++)
+		{
+		//Loads the <title> into VARsectionTitle
+		VARpageTitle = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+		//Loads the <anchor> into VARsectionAnchor to act as an anchor list in the Table of Contents
+		VARpageLink = x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
+
+		//Write out the titles into a list of anchor links by appending the existing value of document.getElementById("TableOfContents").innerHTML 
+		document.getElementById("ULnavigation").innerHTML=(document.getElementById("ULnavigation").innerHTML+"<li><a href=\""+VARpageLink+"\">"+VARpageTitle+"</a></li>");
+		}		
 }
