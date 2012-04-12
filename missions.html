@@ -1,0 +1,114 @@
+<html manifest="sr20x.appcache">
+    <head>
+        <title>SR20x Mission Generator</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/android.css" />
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="explorer.css" media="all" />
+        <![endif]-->
+        <script type="text/javascript" src="js/jquery.js"></script><!-- contains the jQuerry Library -->
+        <script type="text/javascript" src="js/android.js"></script><!-- Stark provided information --> 
+        <script type="text/javascript" src="js/sr20x.js"></script><!-- sr20x specific scripts and functions -->
+		<link rel="Shortcut Icon" href="./favicon.ico"> <!--Favicon -->
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"><!--Favicon Compatiblity-->
+		<link rel="apple-touch-icon" href="./custom_icon.png"/><!--Home Screen Icon-->
+				<!--Google Analytics Code-->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-28137845-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+    </head>
+    <body onLoad="printNavigation()">
+        <div id="container">
+            <div id="header">
+                <h1><a href="index.html">SR20X</a></h1><!-- Site Title -->
+                <div id="nav">
+			<ul>
+				<div id="ULnavigation"></div>
+	                </ul>
+                </div>
+            </div>
+            <div id="content">
+		    <h2>Browse Missions</h2> <!-- Page Title -->
+			<p>
+			    	Please choose the specific mission you need to view
+			</p>
+				<select id="HTMLmissionPicker" onchange="displayMission()">
+					<option value="1">Close Quarters</option>
+					<option value="2">Gauntlet</option>
+					<option value="3">Overrun</option>
+					<option value="4">Guidons</option>
+					<option value="5">Supply and Demands</option>
+					<option value="6">Destruction</option>
+					<option value="7">Incursion</option>
+					<option value="8">Process of Elimination</option>
+					<option value="9">Outflank, Outfight, Outlast</option>
+					<option value="10">A Flag Too Far</option>
+					<option value="11">Bunkers</option>
+					<option value="12">Envelopment</option>
+					<option value="13">Demolition</option>
+					<option value="14">Incoming</option>
+					<option value="15">Restoration</option>
+					<option value="16">Command and Control</option>
+					<option value="17">Diversion</option>
+					<option value="18">Sacrifice</option>
+				</select>
+				<!-- Mission Table -->
+				<table class="MissionTable" id="MissionTable">
+					<!-- Mission Number -->
+					<tr class="RowHeading">
+						<td>Mission Type</td>
+					</tr>
+					<tr id="MissionType">
+						<td>************</td>
+					</tr>					
+					<!-- Mission Name -->
+					<tr class="RowHeading">
+						<td>Mission Name</td>
+					</tr>
+					<tr id="MissionTableName">
+						<td>************</td>
+					</tr>
+					<!-- Special Rules -->
+					<tr class="RowHeading">
+						<td>Special Rules</td>
+					</tr>
+					<tr id="MissionTableRules">
+						<td>************</td>
+					</tr>
+					<!-- Victory Conditions -->
+					<tr class="RowHeading">
+						<td>Victory Conditions</td>
+					</tr>
+					<tr id="MissionTableVictory">
+						<td>************</td>
+					</tr>
+					<!-- Map -->
+					<tr class="RowHeading">
+						<td>Map</td>
+					</tr>
+					<tr id="MissionTableMap">
+						<td>************</td>
+					</tr>
+					
+				</table>
+            <div id="footer">
+                <ul>
+                    <li>Page updated 1/27/12, SR Version 2012 1.2</li>
+					<li><a href="http://privateerpress.com/">Privateer Press</a></li>
+                    <li><a href="legal.html">Legal</a></li>
+                    <li class="last"><a href="http://z1g1.net">z1g1</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

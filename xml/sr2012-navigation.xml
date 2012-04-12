@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pages>
+	<page>
+		<title>Generate Mission</title>
+		<link>index.html</link>
+	</page>
+	<page>
+		<title>SR 2012 Information</title>
+		<link>information.html</link>
+	</page>
+	<page>
+		<title>SR 2012 Missions</title>
+		<link>missions.html</link>
+	</page>
+	<page>
+		<title>Privateer Press</title>
+		<link>http://privateerpress.com/</link>
+	</page>
+</pages>
