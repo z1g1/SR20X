@@ -1,0 +1,44 @@
+CACHE MANIFEST
+# v 0.6 2/9/2012
+
+# CSS
+css/android.css
+css/desktop.css
+css/explorer.css
+
+#HTML
+information.html
+objectives.htmlvariants.html
+legal.htmlreference.html
+index.htmlmissions.html
+# Images
+images/button.png                          images/button_clicked.png                  
+images/deployment-flank.jpg                images/deployment-radial.jpg               
+images/favicon.ico                         images/maps-center-close-quarters.jpg      
+images/maps-center-gauntlet.jpg            images/maps-center-overrun.jpg             
+images/maps-distant-destruction.jpg        images/maps-distant-guidons.jpg            
+images/maps-distant-supply-and-demand.jpg  images/maps-dual-outflank-outfight-outlast.jpg
+images/maps-dual-process-of-elimination.jpgimages/maps-dual-incursion.jpg
+images/maps-flank-a-flag-to-far.jpg
+images/maps-flank-bunker.jpg
+images/maps-flank-envelopment.jpg
+images/maps-objective-demolition.jpg
+images/maps-objective-incoming.jpg
+images/maps-objective-restoration.jpg
+images/maps-radial-command-and-control.jpg
+images/maps-radial-diversion.jpg
+images/maps-radial-sacrifice.jpg
+images/symbol-construct.jpg
+images/symbol-fearless.jpg
+images/variants-Reinforcements.jpg
+custom_icon.png
+favicon.ico
+
+# Javascript
+js/android.js
+js/jquery.js
+js/sr20x.js
+
+# XML
+xml/sr2011-missions.xml
+xml/sr2012-missions.xml
