@@ -4,6 +4,8 @@
 
 This web app was designed as an experiment in mobile web development and as an ode to Warmachine and Hordes
 
+Version 3 of this web app has been moved to Django
+
 Anything related to Warmachine and Hordes is owned by Privateer Press, you need thier awesome minis to play the game anyway, this is just a refernce tool and scenario generator.  if there are any legal problems please contact mail at zackglick dot com.  
 
 The code of this site is liscensed under the MIT Liscense, see the /legal.html page for additional information 
