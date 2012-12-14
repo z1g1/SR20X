@@ -7,7 +7,7 @@ function generateMission(){
 							xmlhttp=new XMLHttpRequest();
 							
 							//selects the missions xml file from the xml directory
-							xmlhttp.open("GET","xml/sr2012-missions.xml",false);
+							xmlhttp.open("GET","/static/xml/sr2012-missions.xml",false);
 							
 							//send the http resoppnse
 							xmlhttp.send();
