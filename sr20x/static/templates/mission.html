@@ -1,6 +1,126 @@
 <html>
-<body>
-<h1>{{ page_title }}</h1>
+    <head>
+        <title>{% block title %}{% endblock %} | sr20x.com</title>
+        
+        <!-- sr20x CSS -->
+            <link href="/static/css/sr20x.css" rel="stylesheet" media="screen">
+            <script type="text/javascript" src="/static/js/sr20x.js"></script><!-- sr20x specific scripts and functions -->
+        <!--/sr20x CSS -->
+            
+        <!-- Bootstrap  CSS-->
+            <link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
+            <!-- Bootstrap Responsive Elements -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">	
+            <!-- /Bootstrap Responsive Elements -->
+        <!-- /Bootstrap CSS -->
+</head>
+    <body onLoad="generateMission()">
+    <!--Main Row -->
+    <div class="row-fluid">
+        <!--Navigation Container-->
+        <div class="span12">
+                <ul class="nav nav-tabs">
+                    {% if page_title == "Home"%}
+                        <li class="active"><a href="/">Home</a></li>
+                    {% else %}
+                        <li><a href="/">Home</a></li>
+                    {% endif %}
+                   
+                    {% if page_title == "Missions" %}
+                        <li class="active"><a href="/missions">Missions</a></li>
+                    {% else %}
+                        <li><a href="/missions">Missions</a></li>
+                    {% endif %}
+
+                    {% if page_title == "Reference" %}
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/reference">Reference</a></li>
+                    {% else %}
+                        <li><a href="/reference">Reference</a></li>
+                    {% endif %}
+                </ul>
+        </div>
+        <!--/Navigation Container-->
+        
+        <!--Content Container -->
+        <div class="span10">
+            <ul>   
+                <li><input id="missionTypeCenter" checked="checked" type="checkbox">Center Scenario<br></li>
+                <li><input id="missionTypeDual" checked="checked" value="dual" type="checkbox">Dual Scenario<br></li>
+                <li><input id="missionTypeDistant" checked="checked" value="distant" type="checkbox">Distant Scenario<br></li>
+                <li><input id="missionTypeRadial" checked="checked" value="radial" type="checkbox">Radial Scenario<br></li>
+                <li><input id="missionTypeFlank" checked="checked" value="flank" type="checkbox">Flank Scenario<br></li>
+                <li><input id="missionTypeObjective" checked="checked" value="objective" type="checkbox">Objective Scenario<br></li>
+            </ul>
+
+        <button id="GenerateAnotherMission" onclick="generateMission()" class="wideButton">Generate Another!!</button>
+
+        <!-- Mission Table -->
+        <table class="BoxTable" id="MissionTable">
+            <!-- Mission Number -->
+        <tbody>
+            <tr class="RowHeading">
+                <td>Mission Type</td>
+            </tr>
+            <tr id="MissionTypeBox">
+                <td>************</td>
+            </tr>   
+            <!-- Mission Name -->
+            <tr class="RowHeading">
+                <td>Mission Name</td>
+            </tr>
+            <tr id="BoxTableName">
+                <td>************</td>
+            </tr>
+            <!-- Special Rules -->
+            <tr class="RowHeading">
+                <td>Special Rules</td>
+            </tr>
+            <tr id="BoxTableRules">
+                <td>************</td>
+            </tr>
+            <!-- Victory Conditions -->
+            <tr class="RowHeading">
+                <td>Victory Conditions</td>
+            </tr>
+            <tr id="BoxTableVictory">
+                <td>************</td>
+            </tr>
+            <!-- Map -->
+            <tr class="RowHeading">
+                <td>Map</td>
+            </tr>
+            <tr id="BoxTableMap">
+                <td>************</td>
+            </tr>
+        </tbody>
+        </table>
+
+
+        </div>
+        <!--/Content Container -->
+
+    </div>
+    <!--/Main Row-->
+    
+    {% block footer %}
+    <!-- Footer Row -->
+    <div class="row-fluid">
+    
+        <!--Footer Container -->
+        <div class="span12 footer">
+            <a href="/about">About</a> | <a href="/blog">Blog</a> | <a href="/legal">Legal</a>
+        </div>
+        <!--/Footer Container -->
+
+    </div>
+    <!--/Footer Row -->
+
+    <!-- Bootstrap JS -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+    {% endblock %}
 </body>
 </html>
 
