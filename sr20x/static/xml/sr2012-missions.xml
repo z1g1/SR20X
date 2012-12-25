@@ -1,288 +1,288 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <missions>
-	<mission>
-		<type>Center Scenario</type>
-		<number>1</number>
-		<name>Close Quarters</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;Players attempt to control a circular zone on the opponent's side of the board while their warcaster/warlock is within a zone.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
-			&lt;p&gt;Mark two zones (8"-diameter circles) in accordance with the diagram below. At the end of each player's turn, starting on the second playert's second turn, a player earns 1 control point by controlling the zone on his opponent's side of the board while his warcaster or warlock is within a zone.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
-		</victoryConditions>
-		<map>images/maps-center-close-quarters.jpg</map>
-	</mission>
-	<mission>
-		<type>Center Scenario</type>
-		<number>2</number>
-		<name>Gauntlet</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone on the opponent's side of the board.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
-			&lt;p&gt;Mark two 6" x 8" zones in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point if he controls the zone on the opponent's side of the board.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
-		</victoryConditions>
-		<map>images/maps-center-gauntlet.jpg</map>
-	</mission>
-	<mission>
-		<type>Center Scenario</type>
-		<number>3</number>
-		<name>Overrun</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone in the center of the board.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
-			&lt;p&gt;Mark a 36" x 8" zone in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point by controlling the zone
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn 2 control points immediately wins the game. 
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in "Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
-		</victoryConditions>
-		<map>images/maps-center-overrun.jpg</map>
-	</mission>
-	<mission>
-		<type>Distant Scenario</type>
-		<number>4</number>
-		<name>Guidons</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to place an objective in a zone they control,, control the opponent's objective, or control both zones.
-			&lt;p&gt;Mark two zones (8"-diameter circles) and place two objectives (Guidon Bearers) in accordance with the diagram below.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn: Either player earns 1 control point when his objective is within a zone that he controls and his opponent's objective is not within a zone.&lt;strong&gt;OR&lt;/strong&gt;(cannot score both ways in one turn) Either player earns 2 control points when he controls his opponent.s objective or both zones.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
-		</victoryConditions>
-		<map>images/maps-distant-guidons.jpg</map>
-	</mission>
-	<mission>
-		<type>Distant Scenario</type>
-		<number>5</number>
-		<name>Supply and Demands</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control the nearby objective, destroy the distant objective, and control a zone on the opponent's side of the board
-			&lt;p&gt;Mark two zones (12"-diameter circles) and place two objectives (Fuel Caches) in accordance with the diagram below.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he contests the zone on his opponent's side of the board while he controls the objective on his own side of the board. OR (cannot score both ways in one turn) A player earns 2 control points if he controls the zone on his opponent's side of the board.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
-		</victoryConditions>
-		<map>images/maps-distant-supply-and-demand.jpg</map>
-	</mission>
-	<mission>
-		<type>Distant Scenario</type>
-		<number>6</number>
-		<name>Destruction</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to destroy two objectives on the opponent's side of the board.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;Before deployment, position an objective (Monolith) on both "OBJ A" positions in accordance with the diagram below. When an objective in the "OBJ A" position is destroyed place a new objective (Monolith) in the "OBJ B" position on the same side of the board during the next Maintenance Phase, using the rule of least disturbance (WARMACHINE: Prime Mk II, p.65) if necessary. 
-			&lt;p&gt;A player earns 1 control point for each objective that is destroyed on the opponent's side of the board.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn 2 control points immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4;"of an objective on the opponent's side of the board.
-		</victoryConditions>
-		<map>images/maps-distant-destruction.jpg</map>
-	</mission>
-	<mission>
-		<type>Dual Scenario</type>
-		<number>7</number>
-		<name>Incursion</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two flags.
-			&lt;p&gt;Place three flags in accordance with the diagram below.
-			&lt;p&gt;At the end of the second player's first turn, randomly remove one flag from the board.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each flag he controls.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4;". of a flag.
-		</victoryConditions>
-		<map>images/maps-dual-incursion.jpg</map>
-	</mission>
-	<mission>
-		<type>Dual Scenario</type>
-		<number>8</number>
-		<name>Process of Elimination</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two zones.
-			&lt;p&gt;Mark two 6" x 14" zones in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each zone he controls. A player can earn only 1 control point per turn. A player can earn a control point in each zone only once during the game.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to score 2 control points and have more control points than his opponent wins the game. If both players reach 2 control points on the same turn re-open scoring in both zones and play until a player earns 2 additional control points. Repeat as needed.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
-		</victoryConditions>
-		<map>images/maps-dual-process-of-elimination.jpg</map>
-	</mission>
-	<mission>
-		<type>Dual Scenario</type>
-		<number>9</number>
-		<name>Outflank, Outfight, Outlast</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two zones.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
-			&lt;p&gt;Mark two zones (12"-diameter circles) in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each zone he controls.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
-		</victoryConditions>
-		<map>images/maps-dual-outflank-outfight-outlast.jpg</map>
-	</mission>
-	<mission>
-		<type>Flank Scenario</type>
-		<number>10</number>
-		<name>A Flag Too Far</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two flags.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
-			&lt;p&gt;Place four flags in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn: A player earns 1 control point if he contests his secondary flag while controlling his primary flag A player instead earns 2 control points if he controls both his primary and secondary flag
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than his opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, only count the army points within 4;"of the primary flags.ontrol 
-		</victoryConditions>
-		<map>images/maps-flank-a-flag-to-far.jpg</map>
-	</mission>
-	<mission>
-		<type>Flank Scenario</type>
-		<number>11</number>
-		<name>Bunkers</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control one circular zone while defending another.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
-			&lt;p&gt;Mark two zones (8"-diameter circles) in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, player 1 earns 1 control point if he controls zone P1, and player 2 earns 1 control point if he controls zone P2.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, player 1 counts only the army points within zone P1, and player 2 counts only the army points within zone P2.
-		</victoryConditions>
-		<map>images/maps-flank-bunker.jpg</map>
-	</mission>
-	<mission>
-		<type>Flank Scenario</type>
-		<number>12</number>
-		<name>Envelopment</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control one rectangular zone while defending another.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
-			&lt;p&gt;Mark a two 14" x 6" zones in accordance with the diagram below.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, player 1 earns 1 control point if he controls zone P1, and player 2 earns 1 control point if he controls zone P2.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn 3 control points immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, player 1 counts only the army points within zone P1, and player 2 counts only the army points within zone P2. 
-		</victoryConditions>
-		<map>images/maps-flank-envelopment.jpg</map>
-	</mission>
-	<mission>
-		<type>Objective Scenario</type>
-		<number>13</number>
-		<name>Demolition</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control an objective and a zone on the opponent's side of the board.
-			&lt;p&gt;Center an objective (Explosives Cache) and mark two zones (8"-diameter circles) in accordance with the diagram below.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he controls the zone on his opponent's side of the board. OR A player earns 1 control point if he controls the objective.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board or within 4;" of the objective.
-		</victoryConditions>
-		<map>images/maps-objective-demolition.jpg</map>
-	</mission>
-	<mission>
-		<type>Objective Scenario</type>
-		<number>14</number>
-		<name>Incoming</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control their own objective, destroy their opponent's objective, and control a zone on their opponent's side of the board.
-			&lt;p&gt;Mark two zones (14" x 6" rectangles) and place two objectives (Artillery Emplacements) in accordance with the diagram below.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he controls the objective on his own side of the board. OR (cannot score both ways in one turn) A player earns 2 control points if the objective on his opponent's side of the board is destroyed and he controls the zone on his opponent's side of the board.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 3 control points and have more control points than his opponent, immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;". For the 3rd tiebreaker, count only the army points within the zone on your opponent's side of the board.
-		</victoryConditions>
-		<map>images/maps-objective-incoming.jpg</map>
-	</mission>
-	<mission>
-		<type>Objective Scenario</type>
-		<number>15</number>
-		<name>Restoration</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to destroy an objective on the opponent's side of the board and control a zone.
-			&lt;p&gt;Mark a zone (14" x 6" rectangle) and place two objectives (Restoration Caches) in accordance with the diagram below.
-			&lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
-			&lt;p&gt;At the end of each player's turn, starting on the second playert's second turn, a player earns 1 control point if the objective on the opponent's side of the board is destroyed and he controls the zone.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 2 control points and have more control points than his opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.on th
-		</victoryConditions>
-		<map>images/maps-objective-restoration.jpg</map>
-	</mission>
-	<mission>
-		<type>Radial Scenario</type>
-		<number>16</number>
-		<name>Command and Control</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone while contesting any flag with their warcaster or warlock.
-			&lt;p&gt;Mark one zone (12½-diameter circle) and place four flags in accordance with the diagram below. In this scenario, in addition to the normal control requirements for zones, a player must contest any flag with a friendly warcaster or warlock in order to control the zone. Players do not earn control points for controlling flags in this scenario.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling the zone.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn 2 control points immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
-		</victoryConditions>
-		<map>images/maps-radial-command-and-control.jpg</map>
-	</mission>
-	<mission>
-		<type>Radial Scenario</type>
-		<number>17</number>
-		<name>Diversion</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a flag while contesting a zone on the opponent's side of theboard.
-			&lt;p&gt;Mark two zones (8"-diameter circles) and place two flags in accordance with the diagram below.
-			&lt;p&gt;Each player can score only on the flag to his right. In this scenario, in addition to the normal control requirements for flags, a player must contest the zone on the opponent's side of the board in order to control his designated flag. Players do not earn control points for controlling zones in this scenario.
-			&lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling his designated flag.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4" of a flag.
-		</victoryConditions>
-		<map>images/maps-radial-diversion.jpg</map>
-	</mission>
-	<mission>
-		<type>Radial Scenario</type>
-		<number>18</number>
-		<name>Sacrifice</name>
-		<specialRules>
-			&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone while a friendly model is B2B with a flag.
-			&lt;p&gt;Mark one zone (12" diameter circle) and place one flag in accordance with the diagram below.
-			&lt;p&gt;In this scenario, in addition to the normal control requirements for zones, a player must own a friendly model that is B2B with the flag in order to control the zone. Players do not earn control points for controlling flags in this scenario. At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling the zone.
-			&lt;p&gt;Each turn after scoring is complete but before the next turn begins, all models B2B with the flag that are owned by a player who scored that turn suffer a POW 20 magic damage roll, are pushed 3" directly away from the flag, and are knocked down.
-		</specialRules>
-		<victoryConditions>
-			&lt;p&gt;The first player to earn 2 control points immediately wins the game.
-			&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
-		</victoryConditions>
-		<map>images/maps-radial-sacrifice.jpg</map>
-	</mission>
+    <mission>
+    <type>Center Scenario</type>
+    <number>1</number>
+    <name>Close Quarters</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;Players attempt to control a circular zone on the opponent's side of the board while their warcaster/warlock is within a zone.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
+        &lt;p&gt;Mark two zones (8"-diameter circles) in accordance with the diagram below. At the end of each player's turn, starting on the second playert's second turn, a player earns 1 control point by controlling the zone on his opponent's side of the board while his warcaster or warlock is within a zone.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
+    </victoryConditions>
+    <map>2012-maps-center-close-quarters.jpg</map>
+    </mission>
+    <mission>
+    <type>Center Scenario</type>
+    <number>2</number>
+    <name>Gauntlet</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone on the opponent's side of the board.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
+        &lt;p&gt;Mark two 6" x 8" zones in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point if he controls the zone on the opponent's side of the board.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
+    </victoryConditions>
+    <map>2012-maps-center-gauntlet.jpg</map>
+    </mission>
+    <mission>
+    <type>Center Scenario</type>
+    <number>3</number>
+    <name>Overrun</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone in the center of the board.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Kill Box
+        &lt;p&gt;Mark a 36" x 8" zone in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point by controlling the zone
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn 2 control points immediately wins the game. 
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in "Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
+    </victoryConditions>
+    <map>2012-maps-center-overrun.jpg</map>
+    </mission>
+    <mission>
+    <type>Distant Scenario</type>
+    <number>4</number>
+    <name>Guidons</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to place an objective in a zone they control,, control the opponent's objective, or control both zones.
+        &lt;p&gt;Mark two zones (8"-diameter circles) and place two objectives (Guidon Bearers) in accordance with the diagram below.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn: Either player earns 1 control point when his objective is within a zone that he controls and his opponent's objective is not within a zone.&lt;strong&gt;OR&lt;/strong&gt;(cannot score both ways in one turn) Either player earns 2 control points when he controls his opponent.s objective or both zones.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
+    </victoryConditions>
+    <map>2012-maps-distant-guidons.jpg</map>
+    </mission>
+    <mission>
+    <type>Distant Scenario</type>
+    <number>5</number>
+    <name>Supply and Demands</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control the nearby objective, destroy the distant objective, and control a zone on the opponent's side of the board
+        &lt;p&gt;Mark two zones (12"-diameter circles) and place two objectives (Fuel Caches) in accordance with the diagram below.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he contests the zone on his opponent's side of the board while he controls the objective on his own side of the board. OR (cannot score both ways in one turn) A player earns 2 control points if he controls the zone on his opponent's side of the board.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board.
+    </victoryConditions>
+    <map>2012-maps-distant-supply-and-demand.jpg</map>
+    </mission>
+    <mission>
+    <type>Distant Scenario</type>
+    <number>6</number>
+    <name>Destruction</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to destroy two objectives on the opponent's side of the board.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;Before deployment, position an objective (Monolith) on both "OBJ A" positions in accordance with the diagram below. When an objective in the "OBJ A" position is destroyed place a new objective (Monolith) in the "OBJ B" position on the same side of the board during the next Maintenance Phase, using the rule of least disturbance (WARMACHINE: Prime Mk II, p.65) if necessary. 
+        &lt;p&gt;A player earns 1 control point for each objective that is destroyed on the opponent's side of the board.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn 2 control points immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4;"of an objective on the opponent's side of the board.
+    </victoryConditions>
+    <map>2012-maps-distant-destruction.jpg</map>
+    </mission>
+    <mission>
+    <type>Dual Scenario</type>
+    <number>7</number>
+    <name>Incursion</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two flags.
+        &lt;p&gt;Place three flags in accordance with the diagram below.
+        &lt;p&gt;At the end of the second player's first turn, randomly remove one flag from the board.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each flag he controls.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4;". of a flag.
+    </victoryConditions>
+    <map>2012-maps-dual-incursion.jpg</map>
+    </mission>
+    <mission>
+    <type>Dual Scenario</type>
+    <number>8</number>
+    <name>Process of Elimination</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two zones.
+        &lt;p&gt;Mark two 6" x 14" zones in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each zone he controls. A player can earn only 1 control point per turn. A player can earn a control point in each zone only once during the game.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to score 2 control points and have more control points than his opponent wins the game. If both players reach 2 control points on the same turn re-open scoring in both zones and play until a player earns 2 additional control points. Repeat as needed.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
+    </victoryConditions>
+    <map>2012-maps-dual-process-of-elimination.jpg</map>
+    </mission>
+    <mission>
+    <type>Dual Scenario</type>
+    <number>9</number>
+    <name>Outflank, Outfight, Outlast</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two zones.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
+        &lt;p&gt;Mark two zones (12"-diameter circles) in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, a player earns 1 control point for each zone he controls.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within zones.
+    </victoryConditions>
+    <map>2012-maps-dual-outflank-outfight-outlast.jpg</map>
+    </mission>
+    <mission>
+    <type>Flank Scenario</type>
+    <number>10</number>
+    <name>A Flag Too Far</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control two flags.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
+        &lt;p&gt;Place four flags in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn: A player earns 1 control point if he contests his secondary flag while controlling his primary flag A player instead earns 2 control points if he controls both his primary and secondary flag
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than his opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, only count the army points within 4;"of the primary flags.ontrol 
+    </victoryConditions>
+    <map>2012-maps-flank-a-flag-to-far.jpg</map>
+    </mission>
+    <mission>
+    <type>Flank Scenario</type>
+    <number>11</number>
+    <name>Bunkers</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control one circular zone while defending another.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
+        &lt;p&gt;Mark two zones (8"-diameter circles) in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, player 1 earns 1 control point if he controls zone P1, and player 2 earns 1 control point if he controls zone P2.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, player 1 counts only the army points within zone P1, and player 2 counts only the army points within zone P2.
+    </victoryConditions>
+    <map>2012-maps-flank-bunker.jpg</map>
+    </mission>
+    <mission>
+    <type>Flank Scenario</type>
+    <number>12</number>
+    <name>Envelopment</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control one rectangular zone while defending another.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Reinforcements
+        &lt;p&gt;Mark a two 14" x 6" zones in accordance with the diagram below.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, player 1 earns 1 control point if he controls zone P1, and player 2 earns 1 control point if he controls zone P2.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn 3 control points immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, player 1 counts only the army points within zone P1, and player 2 counts only the army points within zone P2. 
+    </victoryConditions>
+    <map>2012-maps-flank-envelopment.jpg</map>
+    </mission>
+    <mission>
+    <type>Objective Scenario</type>
+    <number>13</number>
+    <name>Demolition</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control an objective and a zone on the opponent's side of the board.
+        &lt;p&gt;Center an objective (Explosives Cache) and mark two zones (8"-diameter circles) in accordance with the diagram below.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he controls the zone on his opponent's side of the board. OR A player earns 1 control point if he controls the objective.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone on the opponent's side of the board or within 4;" of the objective.
+    </victoryConditions>
+    <map>2012-maps-objective-demolition.jpg</map>
+    </mission>
+    <mission>
+    <type>Objective Scenario</type>
+    <number>14</number>
+    <name>Incoming</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control their own objective, destroy their opponent's objective, and control a zone on their opponent's side of the board.
+        &lt;p&gt;Mark two zones (14" x 6" rectangles) and place two objectives (Artillery Emplacements) in accordance with the diagram below.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;At the end of each player's turn, starting on the second playert's second turn: A player earns 1 control point if he controls the objective on his own side of the board. OR (cannot score both ways in one turn) A player earns 2 control points if the objective on his opponent's side of the board is destroyed and he controls the zone on his opponent's side of the board.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 3 control points and have more control points than his opponent, immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;". For the 3rd tiebreaker, count only the army points within the zone on your opponent's side of the board.
+    </victoryConditions>
+    <map>2012-maps-objective-incoming.jpg</map>
+    </mission>
+    <mission>
+    <type>Objective Scenario</type>
+    <number>15</number>
+    <name>Restoration</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to destroy an objective on the opponent's side of the board and control a zone.
+        &lt;p&gt;Mark a zone (14" x 6" rectangle) and place two objectives (Restoration Caches) in accordance with the diagram below.
+        &lt;p&gt;&lt;strong&gt;Artifice:&lt;/strong&gt; Interactive Objectives
+        &lt;p&gt;At the end of each player's turn, starting on the second playert's second turn, a player earns 1 control point if the objective on the opponent's side of the board is destroyed and he controls the zone.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 2 control points and have more control points than his opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.on th
+    </victoryConditions>
+    <map>2012-maps-objective-restoration.jpg</map>
+    </mission>
+    <mission>
+    <type>Radial Scenario</type>
+    <number>16</number>
+    <name>Command and Control</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone while contesting any flag with their warcaster or warlock.
+        &lt;p&gt;Mark one zone (12½-diameter circle) and place four flags in accordance with the diagram below. In this scenario, in addition to the normal control requirements for zones, a player must contest any flag with a friendly warcaster or warlock in order to control the zone. Players do not earn control points for controlling flags in this scenario.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling the zone.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn 2 control points immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
+    </victoryConditions>
+    <map>2012-maps-radial-command-and-control.jpg</map>
+    </mission>
+    <mission>
+    <type>Radial Scenario</type>
+    <number>17</number>
+    <name>Diversion</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a flag while contesting a zone on the opponent's side of theboard.
+        &lt;p&gt;Mark two zones (8"-diameter circles) and place two flags in accordance with the diagram below.
+        &lt;p&gt;Each player can score only on the flag to his right. In this scenario, in addition to the normal control requirements for flags, a player must contest the zone on the opponent's side of the board in order to control his designated flag. Players do not earn control points for controlling zones in this scenario.
+        &lt;p&gt;At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling his designated flag.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn at least 2 control points and have more control points than the opponent immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within 4" of a flag.
+    </victoryConditions>
+    <map>2012-maps-radial-diversion.jpg</map>
+    </mission>
+    <mission>
+    <type>Radial Scenario</type>
+    <number>18</number>
+    <name>Sacrifice</name>
+    <specialRules>
+        &lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Players attempt to control a zone while a friendly model is B2B with a flag.
+        &lt;p&gt;Mark one zone (12" diameter circle) and place one flag in accordance with the diagram below.
+        &lt;p&gt;In this scenario, in addition to the normal control requirements for zones, a player must own a friendly model that is B2B with the flag in order to control the zone. Players do not earn control points for controlling flags in this scenario. At the end of each player's turn, starting on the second player's second turn, either player can earn 1 control point for controlling the zone.
+        &lt;p&gt;Each turn after scoring is complete but before the next turn begins, all models B2B with the flag that are owned by a player who scored that turn suffer a POW 20 magic damage roll, are pushed 3" directly away from the flag, and are knocked down.
+    </specialRules>
+    <victoryConditions>
+        &lt;p&gt;The first player to earn 2 control points immediately wins the game.
+        &lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in " Victory &amp; Tiebreakers;" For the 3rd tiebreaker, count only the army points within the zone.
+    </victoryConditions>
+    <map>2012-maps-radial-sacrifice.jpg</map>
+    </mission>
 </missions>

@@ -11,7 +11,7 @@
             <link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
             <!-- Bootstrap Responsive Elements -->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">	
+            <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">    
             <!-- /Bootstrap Responsive Elements -->
         <!-- /Bootstrap CSS -->
 </head>
@@ -45,53 +45,74 @@
         
         <!--Content Container -->
         <div class="span10">
-            <ul>   
-                <li><input id="missionTypeCenter" checked="checked" type="checkbox">Center Scenario<br></li>
-                <li><input id="missionTypeDual" checked="checked" value="dual" type="checkbox">Dual Scenario<br></li>
-                <li><input id="missionTypeDistant" checked="checked" value="distant" type="checkbox">Distant Scenario<br></li>
-                <li><input id="missionTypeRadial" checked="checked" value="radial" type="checkbox">Radial Scenario<br></li>
-                <li><input id="missionTypeFlank" checked="checked" value="flank" type="checkbox">Flank Scenario<br></li>
-                <li><input id="missionTypeObjective" checked="checked" value="objective" type="checkbox">Objective Scenario<br></li>
+            <ul class="unstyled inline-block ">   
+                <li><input id="missionTypeCenter" checked="checked" type="checkbox">Center Scenario</li>
+                <li><input id="missionTypeDual" checked="checked" value="dual" type="checkbox">Dual Scenario</li>
+                <li><input id="missionTypeDistant" checked="checked" value="distant" type="checkbox">Distant Scenario</li>
+                <li><input id="missionTypeRadial" checked="checked" value="radial" type="checkbox">Radial Scenario</li>
+                <li><input id="missionTypeFlank" checked="checked" value="flank" type="checkbox">Flank Scenario</li>
+                <li><input id="missionTypeObjective" checked="checked" value="objective" type="checkbox">Objective Scenario</li>
             </ul>
 
         <button id="GenerateAnotherMission" onclick="generateMission()" class="wideButton">Generate Another!!</button>
+        
+        <select id="HTMLmissionPicker" onchange="displayMission()">
+            <option value="1">Close Quarters</option>
+            <option value="2">Gauntlet</option>
+            <option value="3">Overrun</option>
+            <option value="4">Guidons</option>
+            <option value="5">Supply and Demands</option>
+            <option value="6">Destruction</option>
+            <option value="7">Incursion</option>
+            <option value="8">Process of Elimination</option>
+            <option value="9">Outflank, Outfight, Outlast</option>
+            <option value="10">A Flag Too Far</option>
+            <option value="11">Bunkers</option>
+            <option value="12">Envelopment</option>
+            <option value="13">Demolition</option>
+            <option value="14">Incoming</option>
+            <option value="15">Restoration</option>
+            <option value="16">Command and Control</option>
+            <option value="17">Diversion</option>
+            <option value="18">Sacrifice</option>
+        </select>
 
         <!-- Mission Table -->
-        <table class="BoxTable" id="MissionTable">
+        <table class="table table-striped" id="MissionTable">
             <!-- Mission Number -->
         <tbody>
-            <tr class="RowHeading">
+            <tr>
                 <td>Mission Type</td>
             </tr>
-            <tr id="MissionTypeBox">
+            <tr id="MissionType">
                 <td>************</td>
             </tr>   
             <!-- Mission Name -->
-            <tr class="RowHeading">
+            <tr>
                 <td>Mission Name</td>
             </tr>
-            <tr id="BoxTableName">
+            <tr id="MissionTableName">
                 <td>************</td>
             </tr>
             <!-- Special Rules -->
-            <tr class="RowHeading">
+            <tr>
                 <td>Special Rules</td>
             </tr>
-            <tr id="BoxTableRules">
+            <tr id="MissionTableRules">
                 <td>************</td>
             </tr>
             <!-- Victory Conditions -->
-            <tr class="RowHeading">
+            <tr>
                 <td>Victory Conditions</td>
             </tr>
-            <tr id="BoxTableVictory">
+            <tr id="MissionTableVictory">
                 <td>************</td>
             </tr>
             <!-- Map -->
-            <tr class="RowHeading">
+            <tr>
                 <td>Map</td>
             </tr>
-            <tr id="BoxTableMap">
+            <tr id="MissionTableMap">
                 <td>************</td>
             </tr>
         </tbody>
@@ -118,8 +139,8 @@
     <!--/Footer Row -->
 
     <!-- Bootstrap JS -->
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="/static/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     {% endblock %}
 </body>
 </html>

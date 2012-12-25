@@ -21,7 +21,7 @@ def missions(request):
 
 def reference(request):
     page_title = "Reference"
-    input_file = codecs.open("/home/zglick/Projects/sr20x/sr20x/static/text/reference.txt", mode="r", encoding="utf8")
+    input_file = codecs.open("/home/z1g1/Projects/SR20X/sr20x/static/text/reference.txt", mode="r", encoding="utf8")
     text = input_file.read()
     page_content = markdown.markdown(text)
     template = get_template('static.html')
@@ -30,7 +30,7 @@ def reference(request):
 
 def legal(request):
     page_title = "Legal"
-    input_file = codecs.open("/home/zglick/Projects/sr20x/sr20x/static/text/legal.txt", mode="r", encoding="utf8")
+    input_file = codecs.open("/home/z1g1/Projects/SR20X/sr20x/static/text/legal.txt", mode="r", encoding="utf8")
     text = input_file.read()
     page_content = markdown.markdown(text)
     template = get_template('static.html')
@@ -39,7 +39,7 @@ def legal(request):
 
 def about(request):
     page_title = "About"
-    input_file = codecs.open("/home/zglick/Projects/sr20x/sr20x/static/text/about.txt", mode="r", encoding="utf8")
+    input_file = codecs.open("/home/z1g1/Projects/SR20X/sr20x/static/text/about.txt", mode="r", encoding="utf8")
     text = input_file.read()
     page_content = markdown.markdown(text)
     template = get_template('static.html')
