@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mission Generator | sr20x.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <style>
+     body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="static/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="static/ico/favicon.png">
+    <!-- Google Analytics Code -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-28137845-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>           
+    <!-- Google Analytics Code -->
+    </head>
+
+  <body OnLoad="PrintRandomMission()">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+          <div class="container">
+            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="brand">sr20x.com</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="reference.html">Scenario Reference</a></li>
+                    <li><a href="glossary.html">Scenario Glossary</a></li>
+                </ul>
+          </div><!--/.nav-collapse -->
+      </div>
+    </div>
+</div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+      <div class="span12"><h1>Mission Generator</h1></div>
+    </div>
+    <!-- Not working quite yet
+    <div class="row">
+      <div class="span12">Check the Mission Types you wish to generate</div>
+    </div>
+    <div class="row">
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeGuard" checked="checked" value="Guard" /> Guard Scenario<br /></div>
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeAssault" checked="checked" value="Assault" /> Assault Scenario<br /></div>
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeInvade" checked="checked" value="Invade" /> Invade Scenario<br /></div>
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeBorder" checked="checked" value="Border" /> Border Scenario<br /></div>
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeBallance" checked="checked" value="Ballance" /> Ballance Scenario<br /></div>
+        <div class="span4"><input type="checkbox" onchange="AllBoxesChecked()" id="missionTypeLock" checked="checked" value="Lock" /> Lock Scenario<br /></div>
+    </div>
+    -->
+    <div class="row" id="GenerateMissionButton">
+        <div class="span4 offset1">
+            <button id="GenerateAnotherMission" onClick="PrintRandomMission()" class="btn btn-primary">Generate Another!!</button>
+        </div>
+        <div class="span4">
+            <button id="ToggleRandomSelect" onClick="ToggleRandomOrSelect()" class="btn btn-link">Or Select Mission</button>
+        </div>
+    </div>
+    <div class="row hidden" id="SelectMission">
+        <div class="span4 offset1">
+            <select id="missionSelector" onchange="PrintSpecificMission()">
+                <option value="0">-- Select Mission --</option>
+                <option value="1">Destruction</option>
+                <option value="2">Supply and Demand</option>
+                <option value="3">Close Quarters</option>
+                <option value="4">Ammunition Run</option>
+                <option value="5">Chemical Reaction</option>
+                <option value="6">Incursion</option>
+                <option value="7">Outflank</option>
+                <option value="8">Incoming</option>
+                <option value="9">Into the Breach</option>
+                <option value="10">Rally Point</option>
+                <option value="11">Process of elimination</option>
+                <option value="12">Fire Support</option>
+            </select>
+        </div>
+        <div class="span4">
+            <button id="ToggleRandomSelect" onClick="ToggleRandomOrSelect()" class="btn btn-link">Or Generate Mission</button>
+        </div>        
+    </div>
+    <!-- Mission Table -->
+    <div class="row">
+     <!-- Mission Number/Name/Type -->
+         <div class="span12">
+            <h2>Mission</h2>
+            <div id="MissionTableNumberNameType"></div>
+         </div>            
+     </div>
+     
+     <div class="row">
+        <!-- Special Rules -->
+        <div class="span6">
+            <h2>Special Rules</h2>
+            <div id="MissionTableRules"></div>
+        </div>
+        <!-- Victory Conditions -->
+         <div class="span6">
+            <h2>Victory Conditions</h2>
+            <div id="MissionTableVictory"></div>
+         </div>
+    </div>
+ 
+    <!-- Tactical Tips -->
+    <div class="row">
+         <div class="span12 text-warning" id="MissionTableTacticalTip"></div>
+    </div>    
+     <!-- Map and Objective-->
+    <div class="row">
+         <div class="span8" id="MissionTableMap"></div>
+         <div class="span4" id="MissionTableObjective"></div>
+    </div>
+    </div><!--/mission table-->
+
+    </div> <!-- /container -->
+    <div class="modal-footer">
+        <div class="row">
+            <div class="span3">SR Version 2013 1/23/13</div>
+            <div class="span3"><a href="http://privateerpress.com/">Privateer Press</a></div>
+            <div class="span3"><a href="legal.html">Legal</a></div>
+            <div class="span3"><a href="http://z1g1.net">z1g1</a></p></div>
+        </div>
+    </div>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+    <script src="static/js/bootstrap-transition.js"></script>
+    <script src="static/js/bootstrap-alert.js"></script>
+    <script src="static/js/bootstrap-modal.js"></script>
+    <script src="static/js/bootstrap-dropdown.js"></script>
+    <script src="static/js/bootstrap-scrollspy.js"></script>
+    <script src="static/js/bootstrap-tab.js"></script>
+    <script src="static/js/bootstrap-tooltip.js"></script>
+    <script src="static/js/bootstrap-popover.js"></script>
+    <script src="static/js/bootstrap-button.js"></script>
+    <script src="static/js/bootstrap-collapse.js"></script>
+    <script src="static/js/bootstrap-carousel.js"></script>
+    <script src="static/js/bootstrap-typeahead.js"></script>
+    -->
+    <script src="static/js/sr20x.js"></script>
+    <script src="static/js/jquery.js"></script>
+
+  </body>
+</html>
