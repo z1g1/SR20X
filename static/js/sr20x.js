@@ -112,6 +112,10 @@ function PrintMission(MissionArray)
         {
             document.getElementById("MissionTableObjective").innerHTML=("<img src=\"static/img/"+MissionArray[8]+"\" alt=\"Steamroller Objective\">");
         }
+    else
+        {
+            document.getElementById("MissionTableObjective").innerHTML=("");
+        }
 }    
 
 function ToggleRandomOrSelect()

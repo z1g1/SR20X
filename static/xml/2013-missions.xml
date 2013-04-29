@@ -91,8 +91,10 @@
     <name>Chemical Reaction</name>
     <victory>The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game. If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in the Scenario Reference Sheet. For the 3rdtiebreaker, double the army points within 4&quot; of each flag.</victory>
     <specialRules>    &lt;ul&gt;
-        &lt;li&gt;Place three flags in accordance with the diagram below. At the end of the second player’s first turn, randomly remove one flag from the board. At the end of each player’s turn, starting on the second player’s second turn, a player earns control points (CP) as follows:&lt;/li&gt; 
-        &lt;li&gt;Flag: Control = 1 CP, Dominate = 2 CP&lt;/li&gt;
+        &lt;li&gt;Mark two zones (12&quot; x 6&quot; rectangles) and place two objectives (Alchemical Devices) in accordance with the diagram below. The objective on Player 1’s side of the board is a friendly Faction model to Player 1 and vice versa. At the end of each player’s turn, starting on the second player’s second turn, a player earns control points (CP) as follows:&lt;/li&gt; 
+        &lt;li&gt;Enemy Objective: Destroyed (once per objective) = 1 CP&lt;/li&gt;
+        &lt;li&gt;Friendly Zone: Dominate = 1 CP&lt;/li&gt;
+        &lt;li&gt;Enemy Zone: Control = 2 CP, Dominate = 3 CP&lt;/li&gt;
     &lt;/ul&gt;    </specialRules>
     <tacticalTips>    &lt;ul&gt;
         &lt;li&gt;Only the active player scores when multiple players dominate the same zone, flag, or objective.&lt;/li&gt;
@@ -107,10 +109,8 @@
     <name>Incursion</name>
     <victory>The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined in the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the enemy zone.</victory>
     <specialRules>    &lt;ul&gt;
-        &lt;li&gt;Mark two zones (12&quot; x 6&quot; rectangles) and place two objectives (Alchemical Devices) in accordance with the diagram below. The objective on Player 1’s side of the board is a friendly Faction model to Player 1 and vice versa. At the end of each player’s turn, starting on the second player’s second turn, a player earns control points (CP) as follows:&lt;/li&gt; 
-        &lt;li&gt;Enemy Objective: Destroyed (once per objective) = 1 CP&lt;/li&gt;
-        &lt;li&gt;Friendly Zone: Dominate = 1 CP&lt;/li&gt;
-        &lt;li&gt;Enemy Zone: Control = 2 CP, Dominate = 3 CP&lt;/li&gt;
+        &lt;li&gt;Place three flags in accordance with the diagram below. At the end of the second player’s first turn, randomly remove one flag from the board. At the end of each player’s turn, starting on the second player’s second turn, a player earns control points (CP) as follows:&lt;/li&gt; 
+        &lt;li&gt;Flag: Control = 1 CP, Dominate = 2 CP&lt;/li&gt;
     &lt;/ul&gt;    </specialRules>
     <tacticalTips>        &lt;ul&gt;&lt;li&gt;Only the active player scores when multiple players dominate the same zone, flag, or objective. &lt;/li&gt;&lt;/ul&gt;    </tacticalTips>
     <map>maps-2013-standard-incursion.jpg</map>
