@@ -2,7 +2,7 @@ function PrintSpecificMission()
 {
 
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2013-missions.xml")
+    var xmlDoc = LoadXml("static/xml/2014-missions.xml")
 
     // Set the MissionNumber to the selected mission 
     var MissionNumber = document.getElementById("missionSelector").value;
@@ -18,7 +18,7 @@ function PrintRandomMission()
 {
     
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2013-missions.xml")
+    var xmlDoc = LoadXml("static/xml/2014-missions.xml")
     
     // Generate a Random Mission Number
     var MissionNumber = GenerateMissionNumber()
@@ -34,7 +34,7 @@ function PrintRandomMission()
 function PrintGlossary()
 {
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2013-glossary.xml")
+    var xmlDoc = LoadXml("static/xml/2014-glossary.xml")
 
     x = xmlDoc.getElementsByTagName("term");
     
@@ -160,7 +160,7 @@ function displayMission () { //used by missions.html to load a mission which is 
     xmlhttp=new XMLHttpRequest();
     
     //selects the missions xml file from the xml directory
-    xmlhttp.open("GET","/static/xml/2013-missions.xml",false);
+    xmlhttp.open("GET","/static/xml/2014-missions.xml",false);
     
     //send the http resoppnse
     xmlhttp.send();
