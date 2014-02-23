@@ -4,3 +4,4 @@ sr20x.com started as a project to combine playing Warmachine & Hordes and to lea
 
 This site also uses the Jekyll static site generator to host the file in an S3 Bucket
 
+Run s3_website push to push website to S3
