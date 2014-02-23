@@ -2,7 +2,7 @@ function PrintSpecificMission()
 {
 
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2014-missions.xml")
+    var xmlDoc = LoadXml("/assets/xml/2014-missions.xml")
 
     // Set the MissionNumber to the selected mission 
     var MissionNumber = document.getElementById("missionSelector").value;
@@ -18,7 +18,7 @@ function PrintRandomMission()
 {
     
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2014-missions.xml")
+    var xmlDoc = LoadXml("/assets/xml/2014-missions.xml")
     
     // Generate a Random Mission Number
     var MissionNumber = GenerateMissionNumber()
@@ -34,7 +34,7 @@ function PrintRandomMission()
 function PrintGlossary()
 {
     // Load XML file
-    var xmlDoc = LoadXml("static/xml/2014-glossary.xml")
+    var xmlDoc = LoadXml("/assets/xml/2014-glossary.xml")
 
     x = xmlDoc.getElementsByTagName("term");
     
@@ -106,11 +106,11 @@ function PrintMission(MissionArray)
     document.getElementById("MissionTableVictory").innerHTML=(MissionArray[4]);
     document.getElementById("MissionTableRules").innerHTML=(MissionArray[5]);
     document.getElementById("MissionTableTacticalTip").innerHTML=(MissionArray[6]); 
-    document.getElementById("MissionTableMap").innerHTML=("<img src=\"static/img/"+MissionArray[7]+"\" alt=\""+MissionArray[3]+"\">");
+    document.getElementById("MissionTableMap").innerHTML=("<img src=\"/assets/img/"+MissionArray[7]+"\" alt=\""+MissionArray[3]+"\">");
     //Not all missions have an objective so check to make sure the element is not NA
     if (MissionArray[8] != "NA")
         {
-            document.getElementById("MissionTableObjective").innerHTML=("<img src=\"static/img/"+MissionArray[8]+"\" alt=\"Steamroller Objective\">");
+            document.getElementById("MissionTableObjective").innerHTML=("<img src=\"assets/img/"+MissionArray[8]+"\" alt=\"Steamroller Objective\">");
         }
     else
         {
@@ -160,7 +160,7 @@ function displayMission () { //used by missions.html to load a mission which is 
     xmlhttp=new XMLHttpRequest();
     
     //selects the missions xml file from the xml directory
-    xmlhttp.open("GET","/static/xml/2014-missions.xml",false);
+    xmlhttp.open("GET","/assets/xml/2014-missions.xml",false);
     
     //send the http resoppnse
     xmlhttp.send();

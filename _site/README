@@ -1,3 +1,6 @@
 # sr20x
 
 sr20x.com started as a project to combine playing Warmachine & Hordes and to learn some mobile focused JavaScrip and webdesig and the Twitter Bootstrap CSS framework
+
+This site also uses the Jekyll static site generator to host the file in an S3 Bucket
+
