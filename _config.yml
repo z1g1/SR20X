@@ -1,3 +1,5 @@
 name: sr20x.com
 markdown: redcarpet
 pygments: true
+paginate: 5
+paginate_path: "blog/page:num"
